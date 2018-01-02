@@ -1,6 +1,6 @@
 # CI HMVC VUE WEBPACK
 
-> Codeigniter HMVC + Vue + Webpack Starter Template
+> Codeigniter HMVC + Vue 2 + Webpack Starter Template
 
 ## Build Setup
 
