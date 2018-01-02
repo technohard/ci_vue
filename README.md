@@ -2,6 +2,12 @@
 
 > Codeigniter HMVC + Vue 2 + Webpack Starter Template
 
+## Requirements
+
+- install composer
+- install nodejs
+
+
 ## Build Setup
 
 ``` bash
@@ -20,5 +26,18 @@ webpack
 http://localhost/ci_hmvc_vue
 
 ```
+## Troubleshoot
+
+``` bash
+
+error unable install node-sass permission denied 
+
+# from shell command prompt type in your project directory
+npm install --unsafe-perm -g node-sass
+
+
+```
+
+
 
 For detailed explanation on how things work, consult maizier.b@gmail.com.

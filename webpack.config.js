@@ -32,10 +32,30 @@ module.exports = {
         exclude: /node_modules/
       },
       {
+         test:/\.(s*)css$/,
+         use:['style-loader','css-loader', 'sass-loader']
+      },
+      {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'file-loader',
         options: {
-          name: '[name].[ext]?[hash]'
+          name: 'img/[name].[ext]?[hash]'
+        }
+      },
+      {
+        test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
+        loader: 'url-loader',
+        options: {
+          limit: 100000,
+          name: 'media/[name].[hash:7].[ext]'
+        }
+      },
+      {
+        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+        loader: 'url-loader',
+        options: {
+          limit: 100000,
+          name: 'fonts/[name].[hash:7].[ext]'
         }
       }
     ]

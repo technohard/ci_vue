@@ -1,7 +1,22 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
+    <h2>{{ msg }}</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+            
+              <div class="alert alert-success">
+                <span class="label label-info">H</span>
+                <span class="label label-success">E</span>
+                With <b>Bootstrap 3</b> CSS Plugin
+                <span class="label label-warning">L</span>
+                <span class="label label-danger">O</span>
+              </div>
+            
+        </div>
+      </div>  
+    </div>
+    <h3>Essential Links</h3>
     <ul>
       <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
       <li><a href="https://codeigniter.com/" target="_blank">Codeigniter</a></li>
@@ -11,13 +26,14 @@
       <br>
       <li><a href="http://vuejs-templates.github.io/webpack/" target="_blank">Docs for This Template</a></li>
     </ul>
-    <h2>Ecosystem</h2>
+    <h3>Ecosystem</h3>
     <ul>
       <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
       <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
       <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
+    
   </div>
 </template>
 
