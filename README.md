@@ -5,11 +5,14 @@
 ## Build Setup
 
 ``` bash
-# install dependencies
+# install composer dependencies
+composer install
+
+# install npm dependencies
 npm install
 
 # build for production with minification
 webpack
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader]().
+For detailed explanation on how things work, consult maizier.b@gmail.com.
