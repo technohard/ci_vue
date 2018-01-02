@@ -25,7 +25,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App build with Codeigniter 3.1.6 '
+      msg: 'Welcome to Your Vue.js App build with Codeigniter 3.1.6'
     }
   }
 }

@@ -5,7 +5,7 @@ module.exports = {
   entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, './src/dist'),
-    publicPath: 'http://localhost/ci_hmvc_vue/src/dist/', 
+    publicPath: './src/dist/', 
     filename: 'build.js'
   },
   module: {
