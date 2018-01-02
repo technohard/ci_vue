@@ -2,6 +2,11 @@
 
 > Codeigniter HMVC + Vue 2 + Webpack Starter Template
 
+``` bash
+# default database using sqlite
+
+```
+
 ## Requirements
 
 - install composer
