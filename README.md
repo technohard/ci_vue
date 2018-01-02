@@ -5,6 +5,8 @@
 ## Build Setup
 
 ``` bash
+on your project directory
+
 # install composer dependencies
 composer install
 
