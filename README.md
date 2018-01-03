@@ -3,6 +3,9 @@
 > Codeigniter 3.1.6 + Vue 2 + Webpack Starter Template
 
 ``` bash
+
+Codeigniter Standard MVC + Vue 2 + Webpack + Bootstrap CSS
+
 # default database using sqlite
 
 ```

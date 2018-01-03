@@ -5,7 +5,7 @@
       <div class="row">
         <div class="col-md-12">
             
-              <div class="alert alert-success">
+              <div class="alert alert-info">
                 <span class="label label-info">H</span>
                 <span class="label label-success">E</span>
                 With <b>Bootstrap 3</b> CSS Plugin
@@ -42,7 +42,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App build with Codeigniter 3.1.6 HMVC'
+      msg: 'Welcome to Your Vue.js App build with Codeigniter 3.1.6 '
     }
   }
 }
