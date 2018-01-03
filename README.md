@@ -1,6 +1,6 @@
-# CI HMVC VUE WEBPACK
+# CI VUE WEBPACK
 
-> Codeigniter HMVC + Vue 2 + Webpack Starter Template
+> Codeigniter 3.1.6 + Vue 2 + Webpack Starter Template
 
 ``` bash
 # default database using sqlite
@@ -28,7 +28,7 @@ npm install
 webpack
 
 # open your browser address with xampp running on your pc 
-http://localhost/ci_hmvc_vue
+http://localhost/ci_vue
 
 ```
 ## Troubleshoot
