@@ -1,10 +1,10 @@
 # CI VUE WEBPACK
 
-> Codeigniter 3.1.6 + Vue 2 + Webpack Starter Template
+> Codeigniter 3.1.6 + Vue 2 + Webpack + Bootstrap 4 Starter Template
 
 ``` bash
 
-Codeigniter Standard MVC + Vue 2 + Webpack + Bootstrap CSS
+Codeigniter Standard MVC + Vue 2 + Webpack + Bootstrap 4 
 
 # default database using sqlite
 
@@ -27,11 +27,17 @@ composer install
 # install npm dependencies
 npm install
 
-# build for production with minification
-webpack
+#setup proxy for hot reload in webpack config  based on your backend localhost server
+example : 
+your php server running on localhost:8080
+your proxy hot reload running on localhost:3000
 
-# open your browser address with xampp running on your pc 
-http://localhost/ci_vue
+
+# build for production with minification
+webpack --watch
+
+# auto running your browser address with xampp running on your pc 
+http://localhost:3000/ci_vue
 
 ```
 ## Troubleshoot

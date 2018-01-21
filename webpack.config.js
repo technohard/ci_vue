@@ -1,5 +1,7 @@
 var path = require('path')
 var webpack = require('webpack')
+var BrowserSyncPlugin = require('browser-sync-webpack-plugin')
+var LiveReloadPlugin = require('webpack-livereload-plugin')
 
 module.exports = {
   entry: './src/main.js',
@@ -16,9 +18,10 @@ module.exports = {
           'vue-style-loader',
           'css-loader'
         ],
-      },      {
+      },      
+      {
         test: /\.vue$/,
-        exclude: /(node_modules|bower_components)/,
+        exclude: /bower_components/,
         loader: 'vue-loader',
         options: {
           loaders: {
@@ -28,12 +31,20 @@ module.exports = {
       },
       {
         test: /\.js$/,
+        include: [ // use `include` vs `exclude` to white-list vs black-list
+                    path.resolve(__dirname, "src"), // white-list your app source files
+                    require.resolve("bootstrap-vue"), // white-list bootstrap-vue
+                ],
         loader: 'babel-loader',
         exclude: /node_modules/
       },
       {
-         test:/\.(s*)css$/,
-         use:['style-loader','css-loader', 'sass-loader']
+         test:/\.scss$/,
+         use:[
+         'style-loader',
+         'css-loader',
+         'sass-loader'
+         ]
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
@@ -67,6 +78,22 @@ module.exports = {
     },
     extensions: ['*', '.js', '.vue', '.json']
   },
+
+  plugins: [
+        new LiveReloadPlugin(
+        {
+          appendScriptTag: true
+        }),
+        new BrowserSyncPlugin(
+        {
+            host: 'localhost',
+            port: 3000,
+            proxy: 'http://localhost:8080/pasarcoder/'
+        },
+        {
+            reload: false
+        })
+    ],
 
   devServer: {
     historyApiFallback: true,
